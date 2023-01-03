@@ -1,5 +1,5 @@
 build:
-	hugo -d module1_task0/dist/index.html
+	hugo
 
 clean:
 	rm -r dist/*
