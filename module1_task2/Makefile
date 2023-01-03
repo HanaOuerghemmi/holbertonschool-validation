@@ -1,6 +1,6 @@
-# Makefile for Go-Hugo website
+## Makefile for Go-Hugo website
 
-# Build the website
+## Build the website
 build:
 	@hugo
 
@@ -12,8 +12,8 @@ post:
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
 
-# Print usage for each target
-# usage: make help
+## Print usage for each target
+## usage: make help
 help:
 	@echo "Usage:"
 	cat Makefile | grep '##' | tr -d '##'
