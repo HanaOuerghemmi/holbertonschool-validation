@@ -11,3 +11,9 @@ clean:
 post:
 	hugo new posts/$(POST_NAME).md
 	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
+
+# Print usage for each target
+# usage: make help
+help:
+	@echo "Usage:"
+	@sed -n 's/^# usage:\s*\(.*\)/\1/p' ${MAKEFILE_LIST} | column -t -s ':'
