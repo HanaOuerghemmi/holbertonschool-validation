@@ -1,9 +1,9 @@
 build:
-	hugo -d module1_task0/dist/
+	hugo -d module1_task0/dist/index.html
 
 clean:
-	rm -rf module1_task1/dist/*
+	rm -r dist/*
 
 post:
-	hugo new content/$(POST_NAME).md
+	hugo new posts/$(POST_NAME).md
 	echo 'title: "$(POST_TITLE)"' >> content/$(POST_NAME).md
