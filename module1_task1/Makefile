@@ -1,5 +1,5 @@
 build:
-	hugo
+	hugo -s $(SOURCEDIR) -d $(BUILDDIR)
 
 clean:
 	rm -r dist/*
