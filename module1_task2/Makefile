@@ -16,4 +16,4 @@ post:
 # usage: make help
 help:
 	@echo "Usage:"
-	@sed -n 's/^# usage:\s*\(.*\)/\1/p' ${MAKEFILE_LIST} | column -t -s ':'
+	cat Makefile | grep '##' | tr -d '##'
