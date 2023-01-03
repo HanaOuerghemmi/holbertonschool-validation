@@ -3,6 +3,7 @@
 # Build the website
 build:
 	@hugo
+
 # Clean up the build directory
 clean:
 	rm -rf dist/*
