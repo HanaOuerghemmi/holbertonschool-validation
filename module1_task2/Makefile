@@ -4,8 +4,7 @@
 build:
 	@hugo
 
-# Clean up the build directory
-clean:  # Clean up the build directory
+clean: # Clean up the build directory
 	rm -rf dist/*
 
 # Create a new blog post
