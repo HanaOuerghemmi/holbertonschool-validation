@@ -17,3 +17,18 @@ jobs:
         run: |
           cd module3_task1
           make build
+      - name: POst
+        run: |
+          cd module3_task1
+          make POST_TITLE="TITLE_TEST" POST_NAME="NAME_POST_TEST" post
+      - name: CLEAN
+        run: |
+          cd module3_task1
+          make clean
+      - name: Help
+        run: |
+          cd module3_task1
+          make help
+
+
+
