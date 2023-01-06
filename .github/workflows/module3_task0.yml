@@ -1,11 +1,10 @@
 name: module3_task0
-on: push:
-    paths:
-      - 'module3_task0/**'
+on: 
+  push:
   schedule:
     - cron: '9 9 * * *'
 jobs:
-  make-help:
+  check_make:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
