@@ -2,7 +2,7 @@ name: module3_task0
 on: 
   push:
   schedule:
-    - cron: '9 9 * * *'
+    - cron: "0 0 1 * *"
 jobs:
   check_make:
     runs-on: ubuntu-latest
