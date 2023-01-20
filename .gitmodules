@@ -25,3 +25,6 @@
 [submodule "module3_task2/themes/ananke"]
 	path = module3_task2/themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke
+[submodule "module6_task0/themes/ananke"]
+	path = module6_task0/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke
